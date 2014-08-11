@@ -11,8 +11,14 @@
 </head>
 <body>
 
+<span style="float: right">
+    <a href="?lang=en">en</a> 
+    | 
+    <a href="?lang=ru">ru</a>
+</span>
+
 <a href="<c:url value="/logout" />">
-	<spring:message code="label.logout" />
+	<spring:message code="label.logout"  />
 </a>
   
 <h2><spring:message code="label.title" /></h2>
