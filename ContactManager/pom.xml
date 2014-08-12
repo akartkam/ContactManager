@@ -187,26 +187,16 @@
 	</dependencies>
 	<repositories>
 		<!-- For testing against latest Spring snapshots -->
-		<repository>
-			<id>org.springframework.maven.snapshot</id>
-			<name>Spring Maven Snapshot Repository</name>
-			<url>http://maven.springframework.org/snapshot</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
+ 	    <repository>
+		    <id>com.springsource.repository.maven.release</id>
+		    <url>http://repo.springsource.org/release/</url>
+		    <snapshots><enabled>false</enabled></snapshots>
 		</repository>
-		<!-- For developing against latest Spring milestones -->
-		<repository>
-			<id>org.springframework.maven.milestone</id>
-			<name>Spring Maven Milestone Repository</name>
-			<url>http://maven.springframework.org/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
+   		<repository>
+      		<id>com.springsource.repository.maven.milestone</id>
+      		<url>http://repo.springsource.org/milestone/</url>
+      		<snapshots><enabled>false</enabled></snapshots>
+   		</repository>				
 	</repositories>
 	<build>
 		<plugins>
